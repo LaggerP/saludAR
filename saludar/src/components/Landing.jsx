@@ -11,7 +11,7 @@ class Landing extends Component {
                     <div className="Landing-header-title">
                         <h1 className="animated bounceIn"><span>👏Sal</span>
                             <span>ud</span>
-                            <span>AR🇦🇷</span></h1>
+                            <span>AR</span></h1>
 
                         <p className="animated fadeIn">Para aquellas personas que salen, se arriesgan y nos cuidan.</p>
                         <p className="animated fadeIn">Les decimos GRACIAS<span className="heart">❤️</span></p>
