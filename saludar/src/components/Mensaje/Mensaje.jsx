@@ -5,7 +5,7 @@ const Mensaje = (props) => {
     return (
         <div className="Mensaje-container">
             <div className="">
-                <h1>{props.titulo}🤗</h1>
+                <h1>{props.titulo} 🤗</h1>
                 <hr/>
                 <p>{props.mensaje}</p>
 

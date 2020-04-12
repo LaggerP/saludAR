@@ -11,6 +11,7 @@ class MensajeForm extends Component {
         this.state = {
             title: '',
             message: '',
+            allMessages:[],
             status: false
         }
     }
@@ -22,6 +23,7 @@ class MensajeForm extends Component {
         const messageData = {title: this.state.title, message: this.state.message}
         firebaseApi.createMessage(messageData.title, messageData.message);
         this.setState({status: true});
+        window.location.reload(false);
     };
 
     render() {

@@ -15,20 +15,22 @@ class Mensajes extends Component {
         }
     }
 
-    async componentDidMount() {
-        await firebaseApi.getMessages().then((msg) => {
-            this.setState({messages: msg})
-        }, (error) => console.log(error))
+     componentDidMount() {
+        this.getAllMessages();
     }
 
+    async getAllMessages() {
+        await firebaseApi.getMessages().then((msg) => {
+            this.setState({messages: [...this.state.messages,...msg]});
+        }, (error) => console.log(error))
+
+    }
 
     render() {
-
-
         return (
             <Grid container spacing={0}>
                 <Grid item xs={12}>
-                    {this.state.messages.map((msg, index) =>
+                    {(this.state.messages || []).map((msg, index) =>
                         <Paper style={{ margin: 30 }}>
                             <Mensaje index={index} titulo={msg.titulo} mensaje={msg.mensaje}/>
                         </Paper>
