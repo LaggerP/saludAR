@@ -19,7 +19,6 @@ class Mensajes extends Component {
         await firebaseApi.getMessages().then((msg) => {
             this.setState({messages: msg})
         }, (error) => console.log(error))
-        console.log(this.state.messages)
     }
 
 
