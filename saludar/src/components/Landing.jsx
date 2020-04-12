@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import './Landing.scss';
 import MensajeForm from "./MensajeForm/MensajeForm";
-import GitHubIcon from '@material-ui/icons/GitHub';
 
 class Landing extends Component {
-
     render() {
         return (
             <div>
@@ -25,7 +23,6 @@ class Landing extends Component {
                 <div className="Landing-header-footer">
                      <span>Realizado con ❤️ por <a href="https://github.com/LaggerP">Pablo Lagger</a></span>
                 </div>
-
             </div>
         );
     }
