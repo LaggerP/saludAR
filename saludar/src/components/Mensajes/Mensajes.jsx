@@ -22,7 +22,7 @@ class Mensajes extends Component {
     async getAllMessages() {
         await firebaseApi.getMessages().then((msg) => {
             this.setState({messages: [...this.state.messages,...msg]});
-        }, (error) => console.log(error))
+        })
 
     }
 
