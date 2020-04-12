@@ -1,0 +1,35 @@
+* {
+  margin: 0 auto;
+}
+
+.MensajeForm-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #74ACDFFF;
+  opacity:1;
+
+  &--form {
+    background: white;
+    & form {
+      padding:50px 20px;
+      width: 70%;
+      & TextField {
+        border: 1px solid #FCBF49;
+        border-color: #FCBF49;
+      }
+      & Button {
+        color: white;
+        font-size: 20px;
+        background: #FCBF49;
+        transition: .2s;
+        &:hover {
+          background: white;
+          color: #FCBF49;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
