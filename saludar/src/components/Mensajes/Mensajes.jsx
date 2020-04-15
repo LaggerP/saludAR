@@ -32,7 +32,7 @@ class Mensajes extends Component {
                 <Grid item xs={12}>
                     {(this.state.messages || []).map((msg, index) =>
                         <Paper style={{ margin: 30 }}>
-                            <Mensaje index={index} titulo={msg.titulo} mensaje={msg.mensaje}/>
+                            <Mensaje index={index} nombre={msg.nombre} titulo={msg.titulo} mensaje={msg.mensaje}/>
                         </Paper>
                     )
                     }

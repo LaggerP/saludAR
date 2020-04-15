@@ -1,15 +1,6 @@
-* {
-  margin:0;
-  padding:0;
-}
-
 body {
   min-width: 100%;
-
   font-family: 'Baloo Tammudu 2', cursive;
   background-color: rgba(191, 191, 191, 0.12);
 }
 
-.App {
-  text-align: center;
-}
