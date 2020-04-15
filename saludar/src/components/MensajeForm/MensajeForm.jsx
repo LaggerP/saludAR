@@ -78,7 +78,8 @@ class MensajeForm extends Component {
                                         type="submit"
                                         variant="contained"
                                         fullWidth>
-                                        Enviar mensaje ✉️
+                                        <span role="img" aria-label>Enviar mensaje ✉️</span>
+
                                     </Button>
                                 </Grid>
                             </Grid>
